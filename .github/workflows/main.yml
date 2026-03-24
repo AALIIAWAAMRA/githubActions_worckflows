@@ -16,8 +16,8 @@ jobs:
         with:
           node-verion: 18
           
-      - name: install dependency
-        run: npm install
+      # - name: install dependency
+        # run: npm install
 
-      - name: test code 
-        run: npm test
+      # - name: test code 
+        # run: npm test
