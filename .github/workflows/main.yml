@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: chekout code
-        uses: actions/chekout@v3
+      # - name: chekout code
+        # uses: actions/chekout@v3
         
       - name: Setup Node.js
         uses:  actions/setup-node@v3
