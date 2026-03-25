@@ -1,0 +1,30 @@
+name: CI Pipeline
+
+on: 
+   push: 
+      branches:
+         - main
+         - "release/**" #any release  like releasev1 releasePayment and so on
+      paths: 
+         - "src/**"  #to avoid trigger my expenseive CI CD pipline for change on the documntation or somthing
+   pull_request:
+      branches:
+         - main
+         - "release/**" 
+      paths: 
+         - "src/**"
+
+jobs: 
+   test: 
+      runs-on: ubuntu-latest
+      steps: 
+         -  name: Checkout code
+            uses: actions/checkout@v4.2.2
+
+
+         -  name: run tests
+            run:  |
+               npm install
+               npm test 
+               echo "tests run successfully"
+
