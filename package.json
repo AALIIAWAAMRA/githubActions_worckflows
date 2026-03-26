@@ -1,0 +1,10 @@
+{
+   "name":"CX-3 pipline",
+   "descreption":"A simple Node.js application to demonstrate GitHub Actions workflows.",
+   "main":"src/app.js",
+   "scripts":{
+      "start":"node src/app.js",
+      "test":"bash test.sh"
+   },
+   "dependencies": {}
+}
